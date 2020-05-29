@@ -34,6 +34,10 @@ export class ProductService {
     return this.http.put<Product>(`${this.BASE_URL}/product/update?productID=${id}`, product);
   }
 
+  createOrder(quantity: number): Observable<Order>{
+    return this.http.post<Order>(`${this.BASE_URL}/calcular/`)
+  }
+
   
   
 

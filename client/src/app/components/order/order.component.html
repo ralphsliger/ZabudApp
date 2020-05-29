@@ -1,3 +1,7 @@
+<p>
+  order works!
+</p>
+
 <div *ngFor="let product of products" class="card card-body mb-2">
   <div class="row">
     <div class="col-md-8">
@@ -19,16 +23,18 @@
           createdAt: {{product.createdAt}}
         </li>
       </ul>
-      <button (click)="deleteProduct(product._id)" class="btn btn-danger">
-        Delete
-      </button>
-      <button [routerLink]="['/product/edit', product._id]" class="btn btn-secondary">
-        Edit
-      </button>
-      <button [routerLink]="['/calcular']"> 
-        Calcular
-      </button>
+      
     </div>
     
+  </div>
+</div>
+
+<div class="container">
+  <div *ngFor="let product of products" class="card card-body mb-2">
+    <div class="row">
+        <div class="col-md-8">
+          Total: 
+        </div>
+      </div>
   </div>
 </div>
