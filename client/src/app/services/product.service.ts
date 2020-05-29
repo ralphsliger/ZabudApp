@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Product } from '../interfaces/Product';
+import { Order } from '../interfaces/Order';
 import { Observable } from 'rxjs'
 
 //CRUD EN ANGULAR
@@ -34,6 +35,17 @@ export class ProductService {
     return this.http.put<Product>(`${this.BASE_URL}/product/update?productID=${id}`, product);
   }
 
+<<<<<<< Updated upstream
+=======
+  createOrder(quantity: number): Observable<Order> {
+    return this.http.post<Order>(`${this.BASE_URL}/calcular/`, quantity);
+  }
+
+  listOrdersByUser(id: string): Observable<Order> {
+    return this.http.get<Order>(`${this.BASE_URL}/calcular/${id}`);
+  }
+
+>>>>>>> Stashed changes
   
   
 
