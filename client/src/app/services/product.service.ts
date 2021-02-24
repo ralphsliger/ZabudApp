@@ -35,8 +35,7 @@ export class ProductService {
     return this.http.put<Product>(`${this.BASE_URL}/product/update?productID=${id}`, product);
   }
 
-<<<<<<< Updated upstream
-=======
+
   createOrder(quantity: number): Observable<Order> {
     return this.http.post<Order>(`${this.BASE_URL}/calcular/`, quantity);
   }
@@ -45,8 +44,8 @@ export class ProductService {
     return this.http.get<Order>(`${this.BASE_URL}/calcular/${id}`);
   }
 
->>>>>>> Stashed changes
-  
-  
+
+
+
 
 }

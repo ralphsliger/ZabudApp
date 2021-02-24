@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { OrderComponent } from './components/order/order.component';
 
 
 
@@ -17,6 +18,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ProductFormComponent,
     ProductListComponent,
     NavbarComponent,
+    OrderComponent,
     
   
   ],
